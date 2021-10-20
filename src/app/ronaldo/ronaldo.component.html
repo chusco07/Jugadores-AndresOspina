@@ -1,0 +1,10 @@
+<div *ngFor="let jugador of ronaldo">
+    <h4 class="title">Infografía {{jugador.Nombre}}</h4>
+    <div class="container">
+        <img [src]="jugador.Img" alt="">
+        <div>
+            <b>Nombre:</b>{{jugador.Nombre}} <br> <b>Bio:</b>{{jugador.Bio}} <br> <b>Img:</b>{{jugador.Img}} <br> <b>Nacimiento:</b>{{jugador.Nacimiento}} <br> <b>Seleccion:</b>{{jugador.Seleccion}} <br> <b>Equipo:</b>{{jugador.Equipo}}
+        </div>
+        <a class="btn btn-dark btn-lg btn-block" role="button" [routerLink]="['jugadores']">Home</a>
+    </div>
+</div>
